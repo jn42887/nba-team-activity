@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>NBA Team Activity Grid</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+    body {
+
+      font-family: 'Inter', sans-serif;
+
+      background-color: #6F263D;
+
+      color: #FFC72C;
+
+    } 
+
+    .text-wine { color: #6F263D; }
+
+    .bg-wine { background-color: #6F263D; }
+
+    .text-gold { color: #FFC72C; }
+
+    .border-gold { border-color: #FFC72C; }
+
+  </style>
+
+</head>
+
+<body class="bg-gray-900 p-4">
+
+
+
+  <div class="bg-gray-800 rounded-xl shadow-2xl p-8 w-full border-4 border-gold">
+
+
+
+    <!-- Chart Section -->
+
+    <div class="w-full">
+
+      <h1 class="text-3xl lg:text-4xl font-bold text-center text-gold mb-6">
+
+        Which Teams are the Most Active on Offense and Defense?
+
+      </h1>
+
+      <div class="w-full h-[80vh] flex items-center justify-center">
+
+        <img src="NBA Team Activity.png" alt="NBA Team Activity Grid" class="w-full h-full object-contain">
+
+      </div>
+
+    </div>
+
+
+
+    <!-- Explanation Section -->
+
+    <div class="w-full mt-12 text-gray-300">
+
+      <h2 class="text-2xl font-bold text-gold mb-4">Understanding the Chart</h2>
+
+      <p class="mb-4">
+
+        This grid visualizes NBA teams based on their offensive and defensive "activity" during the season. It helps to quickly see which teams are more active on each end of the court.
+
+      </p>
+
+      <ul class="list-disc list-inside space-y-2 mb-4">
+
+        <li><strong class="text-gold">Offensive Activity (X-axis):</strong> This measures a team's offensive movement, with higher scores reflecting more passing and player movement. Teams on the right feature more possessions with a lot of movement and passing</li>
+
+        <li><strong class="text-gold">Defensive Activity (Y-axis):</strong> This measures a team's defensive aggressiveness, with higher scores indicating more aggressive tactics like pick-and-roll blitzes and a higher frequency of fouls. Teams at the top blitz/show and foul more.</li>
+
+        <li><strong class="text-gold">Team Name Size:</strong> The size of each team's name is scaled to its number of playoff wins.</li>
+
+      </ul>
+
+      <p class="mt-6 text-xl font-bold text-gold">
+
+        Cavs
+
+      </p>
+
+      <p class="mt-2 text-gray-300">
+
+        With an offensive activity score of 41 and a defensive activity score of 24, we are positioned in the bottom-left quadrant. This suggests that we are a team that prefers a more reserved, low-activity style on both sides of the ball.
+
+      </p>
+
+      <p class="mt-6 text-xl font-bold text-gold">
+
+        Successful Playoff Teams in 2025
+
+      </p>
+
+      <p class="mt-2 text-gray-300">
+
+        Other than the main exception, Indiana, the more successful playoff teams tended to be less active on offense, with varying levels of defensive aggressiveness.
+
+      </p>
+
+    </div>
+
+  </div>
+
+</body>
+
+</html>
